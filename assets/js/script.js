@@ -17,10 +17,10 @@ $('.saveBtn').on('click', function () { //saves user input for each time block
 });
 
 $("textarea").each(function () { //for each element with the text area class, run this function
-    
+
     let hour = moment().hours();//use moment to set the current hour
     let time = $(this).attr("id")// set "this" as time, so that whichever timeblock the user selects, is that specific time
-
+//conditionals to color code time blocks based on current time derived from moment
    if (time < hour) { //when time block that is less than the current hour detected by moment, then:
     $(this).addClass('past');//add the class 'past' to keep the background the same color
     $(this).removeClass('present');//remove the class 'present' to keep the background from being red
