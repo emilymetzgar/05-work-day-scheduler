@@ -55,4 +55,3 @@ $("#16").val(localStorage.getItem("16"));
 
 $("#17").val(localStorage.getItem("17"));
 
-$("#18").val(localStorage.getItem("18"));
